@@ -1,9 +1,0 @@
-#### simutate no effect
-n = 30
-library(data.table)
-library(DT)
-set.seed(31)
-dat = data.table(Group = c(rep.int(x='Treatment',time=n/2),rep.int(x='Control',times=n/2)))
-dat[Group == 'Control',Profit:=round(x=rnorm(n=.N,mean=41000,sd=4000),digits = 1)]
-dat[Group == 'Treatment',Profit:=round(x=rnorm(n=.N,mean=41000,sd=4000),digits = 1)]
-datatable(data=dat)
