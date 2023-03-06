@@ -2,6 +2,9 @@ research question:
 Null Hypothesis: Average profit generated from Non-tipping(NT) model is less or equal to average profit generated from Conventional-tipping(CT) model
 Alternative Hypothesis: Average profit generated from NT model is greater than average profit generated from CT model
 
+H0: μNT - μCT ≤ 0
+Ha: μNT - μCT > 0
+
 t.test(x=dat[Group=='Treatment',Customer],y=dat[Group=='Control',Customer],mu=0,alternative = 'greater')
 
 library(data.table)
